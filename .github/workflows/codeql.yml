@@ -1,13 +1,12 @@
-name: "CodeQL"
+name: "CodeQl scanner"
 
 on:
   push:
-  pull_request:
 
 jobs:
   analyze:
     name: Analyze
-    runs-on: [self-hosted, ubuntu-22.04-large]
+    runs-on: ubuntu-22.04-medium
     permissions:
       actions: read
       contents: read
